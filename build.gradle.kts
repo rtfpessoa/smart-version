@@ -10,7 +10,7 @@ java {
 }
 
 group = "xyz.rtfpessoa"
-version = "0.1.0"
+version = if (findProperty("version") == "unspecified") "0.1.0-SNAPSHOT" else version
 
 repositories {
     mavenCentral()

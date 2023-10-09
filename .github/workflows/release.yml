@@ -59,7 +59,7 @@ jobs:
       - name: Test
         run: ./gradlew test
 
-      - name: Test
+      - name: Release
         run: ./gradlew publish -Pversion=${{ needs.version.outputs.version }}
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
